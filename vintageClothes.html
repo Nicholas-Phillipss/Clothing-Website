@@ -18,8 +18,8 @@
     <section class="header">
         <nav>
             <!--<a href="vintageClothes.html"><img src="eduford_img/Logo.png"></a>-->
-            <div class="nav-links">
-                <i class="fa fa-times"></i>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
 
                 <ul>
                     <li><a href="">HOME</a></li>
@@ -28,7 +28,7 @@
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars"></i>
+            <i class="fa fa-bars" onclick="hideMenu()"></i>
         </nav>
 
         <div class="text-box">
@@ -38,5 +38,41 @@
 
         </div>
     </section>
+
+
+<!--Lot of Clothes Tab 37.01-->
+<section class="LotofClothes">
+    <h1>Clothes for Sales</h1>
+    <p>These are the clothes are are full sale at the moment. Please check my instagram for more drops.</p>
+
+    <div class ="row">
+        <div class="LotofClothes-col">
+            <h3>Harley Davidson</h3>
+            <p>This is the current inventory of all the Harley Davidson. </p>
+        </div>
+        <div class="LotofClothes-col">
+            <h3>Nike</h3>
+            <p>This is the current inventory of all the Nike. </p>
+        </div>
+        <div class="LotofClothes-col">
+            <h3>Random Vinatge</h3>
+            <p>This is the current inventory of all the random vintage items. </p>
+        </div>
+    </div>
+</section>
+
+<!---Javascript for the toggle menu--->
+<script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right ="0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right ="-200px";
+        }
+
+</script>
+
 </body>
 </html>
